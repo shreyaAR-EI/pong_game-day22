@@ -1,4 +1,3 @@
-# from turtle import Turtle,Screen
 from turtle import Turtle
 
 
@@ -13,9 +12,11 @@ class Paddle(Turtle):
 
 
     def up(self):
+        """makes the paddle move up by 20 pixels"""
         new_y = self.ycor() + 20
         self.goto(self.xcor(),new_y)
 
     def down(self):
+        """makes the paddle move down by 20 pixels"""
         new_y = self.ycor() - 20
         self.goto(self.xcor(), new_y)
